@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+h6 {
+  margin-top: 6px;
+  float: right;
+  color: #00008b;
+  opacity: 0.8;
+}
+h6:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+h5 {
+  padding-top: 10px;
+  color: aliceblue;
+}
+.logo {
+  width: 50px;
+}
+span {
+  color: aliceblue;
+}
+span:hover {
+  color: cyan;
+  cursor: pointer;
+}
+.icons {
+  float: right;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.icons:hover {
+  color: cyan;
+  cursor: pointer;
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.my-facebook-button-class {
+  width: 80px;
+  height: 25px;
+  border-radius: 4px;
+  background: #3b5998;
+  color: white;
+  border: 0px transparent;
+  text-align: center;
+  margin: 5px;
+  display: inline-block;
+}
+.my-facebook-button-class:hover {
+  opacity: 0.8;
+}
