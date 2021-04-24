@@ -72,9 +72,9 @@ export const userAuth = (token) => async (dispatch) => {
   }};
 
   export const deleteTask = (id) => async (dispatch) => {
-  dispatch({type:"loading"})
   const token =await window.localStorage.getItem("token");
   try {
+  dispatch({type:"loading"})
   let headers={authorization:`bearer ${token}`} 
      
   const data = {id}  

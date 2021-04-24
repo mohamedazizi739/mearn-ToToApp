@@ -3,18 +3,17 @@ import {Form,Button,Modal} from "react-bootstrap"
 import EditIcon from '@material-ui/icons/Edit';
 import { editTask } from '../actions';
 import { useDispatch } from "react-redux";
-const UpdateModal = ({id,taskName,setLoad}) => {
+const UpdateModal = (props) => {
+ const {id,taskName}=props
  const [newName, setNewName] = useState(taskName)
   const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleClose = () => {setShow(false)};
+  const handleShow = () =>{setShow(true);};
   const dispatch=useDispatch()
   const savefunc=()=>{
    if(newName.trim()){
-   setLoad(true)
    dispatch(editTask(id,newName))
    handleClose()
-   setLoad(false)
   }}
  return (
   <div>
