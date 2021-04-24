@@ -2,7 +2,6 @@ import React,{useState,useEffect} from 'react'
 import {useDispatch} from 'react-redux'
 import {Modal,Button,Form} from 'react-bootstrap'
 import { addTask } from '../actions';
-import { set } from 'mongoose';
 const AddModal = ({setLoad}) => {
  const [show, setShow] = useState(false);
  const [taskName, setTask] = useState('');
