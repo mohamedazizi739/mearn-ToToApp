@@ -18,8 +18,8 @@ const AddModal = ({setLoad}) => {
   }
 
  return (
-  <div  >
-   <div style={{display:"flex",justifyContent:"center",marginTop:"20px"}}>
+  <div >
+   <div style={{display:"flex",justifyContent:"center",marginTop:"20px",marginBottom:"15px"}}>
    <Button variant="primary" onClick={handleShow}>
         Add task
     </Button></div>

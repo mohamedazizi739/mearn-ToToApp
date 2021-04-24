@@ -10,6 +10,7 @@ const Register = ({fbApi}) => {
  if(userAuth){return(<Redirect to='/profile'  />)}
  if(page==='register') {return <RegisterPage fbApi={fbApi} setPage={setPage} /> } 
  return (
+
  <LoginPage setPage={setPage}/>
  )
 }

@@ -17,7 +17,7 @@ const UpdateModal = (props) => {
   }}
  return (
   <div>
-   <EditIcon onClick={handleShow}/>
+   <EditIcon className="icons" onClick={handleShow}/>
     <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
          <Modal.Title>Edit task</Modal.Title>
