@@ -5,10 +5,10 @@ import { editTask } from '../actions';
 import { useDispatch } from "react-redux";
 const UpdateModal = (props) => {
  const {id,taskName}=props
- const [newName, setNewName] = useState(taskName)
+  const [newName, setNewName] = useState(taskName)
   const [show, setShow] = useState(false);
   const handleClose = () => {setShow(false)};
-  const handleShow = () =>{setShow(true);};
+  const handleShow = () =>{setShow(true);setNewName(taskName)};
   const dispatch=useDispatch()
   const savefunc=()=>{
    if(newName.trim()){
