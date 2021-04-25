@@ -20,7 +20,7 @@ const Tasks = () => {
   {tasks.map((obj,i)=>{
    return(
     <div key={obj['_id']} style={{display:"block",maxWidth:"500px",backgroundColor:"#008080",padding:"5px",marginBottom:"8px",marginTop:"8px",marginLeft:"auto",marginRight:"auto",borderRadius: "5px"}}>
-    <span style={{color:"white",fontSize:"18px"}} >{i} : {obj.taskName}</span>
+    <span style={{color:"white",fontSize:"18px",wordBreak: "break-all"}} >{i} : {obj.taskName}</span>
     <div className="icons" onClick={()=>deleteF(obj)}><DeleteForeverIcon/></div>   
     <div className="icons"><UpdateModal id={obj['_id']} taskName={obj['taskName']} /></div>
     </div>
